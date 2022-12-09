@@ -1,8 +1,13 @@
+body, html {
+    height:  100%;
+
+}
 .wrapper{
     display:grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 5vh,90vh,5vh;
-    
+    height:auto;
+    min-height:100%;
 }
 
 
@@ -209,7 +214,7 @@ in the main page*/
 .mainSection {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-flow: row wrap;
     align-items: flex-start;
     text-align: center;
