@@ -2,8 +2,8 @@
 .wrapper{
     display:grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: 10vh,80vh,10vh;
-    height:100vh;   
+    grid-auto-rows: minmax(auto,500);
+    min-height:100vh;
    
     
 }
@@ -12,7 +12,7 @@
 /*styles background and fonts*/
 body {
     margin: 0;
-    height:100vh;
+    
     background-color: rgba(32, 32, 32, 0.089);
     font-family: 'Calibri', Times, serif;
     background-image: url(images/v617batch2-bb-01-technology.jpg);
@@ -222,6 +222,7 @@ in the main page*/
     grid-auto-rows: auto;
     text-align: center;
     grid-gap:10px;
+    
    
  
 
