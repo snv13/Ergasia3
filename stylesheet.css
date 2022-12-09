@@ -1,13 +1,9 @@
-body, html {
-    height:  100%;
-
-}
+    
 .wrapper{
     display:grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 5vh,90vh,5vh;
-    height:auto;
-    min-height:100%;
+    
 }
 
 
