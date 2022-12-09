@@ -1,0 +1,501 @@
+.wrapper{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 5vh,90vh,5vh;
+    
+}
+
+
+/*styles background and fonts*/
+body {
+    margin: 0;
+    height: 100%;
+    background-color: rgba(32, 32, 32, 0.089);
+    font-family: 'Calibri', Times, serif;
+    background-image: url(images/v617batch2-bb-01-technology.jpg);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+/*adjusts the size of the contents of main*/
+main {
+    padding-top: 5em;
+    grid-column:1/7;
+    grid-row:2/3;
+}
+
+/*it creates the background color of the menu on all pages and adjusts the 
+size and position of it*/
+
+header {
+    grid-column: 1/-1;
+    grid-row:1/2;
+    background-color: rgb(54, 130, 180);
+    display: flex;
+    flex-direction: row;
+   
+    flex-flow:row wrap;
+    justify-content: space-between;
+
+    
+}
+
+nav ul {
+    list-style: none
+}
+
+/*styles the menu bar on top of every page*/
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-flow:row wrap;
+    background-color: rgb(54, 130, 180);
+    font-family: 'Calibri', Times, serif;
+}
+
+.navItem{
+    transition: all 0.15s ease-in-out 0.05s;
+    border-radius: 80px 10px;
+    align-self: center;
+    padding: 0.8em;
+}
+
+/*styles the menu on every page and prepares for a hover*/
+.navItem a {
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+/*makes the menu hover with a smooth short animation*/
+.navItem:hover {
+    color: rgb(221, 233, 236);
+    background-color: rgb(37, 88, 122);
+    transition: all 0.15s ease-in-out 0.05s;
+    padding: 0.8em;
+    opacity: 1
+}
+
+/*puts the logo on the top left*/
+.logo {
+    margin-left: 1%;
+    align-self: center;
+    transition: transform .2s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/*styles some headers on all pages*/
+.header {
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    color: white;
+}
+
+.header3 {
+    margin-top: 4%;
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    color: white;
+}
+
+
+
+
+
+/*styles the text on tech.html*/
+.techDescr {
+    max-width: 100%;
+    font-family: 'Calibri', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+}
+
+/*styles the menu on every page and prepares for a hover*/
+.navItem {
+    text-decoration: none;
+    color: white;
+    padding: 0.8em;
+    transition: all 0.15s ease-in-out 0.05s;
+    border-radius: 80px 10px;
+}
+
+/*makes the menu hover with a smooth short animation*/
+.navItem:hover {
+    color: rgb(221, 233, 236);
+    background-color: rgb(37, 88, 122);
+    transition: all 0.15s ease-in-out 0.05s;
+    padding: 0.8em;
+    opacity: 1
+}
+
+/*styles some headers on all pages*/
+.header {
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    color: white;
+}
+
+.header3 {
+    margin-top: 4%;
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    color: white;
+}
+
+/*styles the footer and puts it on the bottom*/
+footer {
+    
+    grid-column:1/7;
+    grid-row:3/4;
+    display: flex;
+    flex-direction: column;
+    flex-flow:column wrap;
+    align-items: center;
+    padding-top: 0.5%;
+    width: 100%;
+    background-color: rgb(54, 130, 180);
+    
+    text-align: center;
+    
+}
+
+footer a {
+    color: inherit;
+}
+
+footer p {
+    color: inherit;
+    height: 5px;    
+}
+
+/*adjusts the position, size and background color for the block of the intro
+in the main page*/
+.intro {
+    width: 100%;
+      
+
+}
+
+/*styles the txt on the main page*/
+.pageTitle {
+    text-align: center;
+    font-size: 22px;
+}
+
+/*puts the blocks that are used on almost every page, on the left and uses
+ black font so the txt can be visible*/
+.mainSection,
+.sectionContent {
+      
+    color: white;
+}
+
+/*adjusts the width of the blocks and aligns the txt on the center*/
+.mainSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    text-align: center;
+}
+
+/*adjusts the background color of the blocks to white,
+adjusts the position of context, makes the border more circular
+,it creates a shadow on the block
+and it prepares for the hover animation*/
+.sectionContent {
+    background-color: rgba(71, 176, 236, 0.432);
+    width: 400px;
+    margin-top: 3%;
+    box-shadow: black 0px 0px 10px;
+    border-radius: 80px;
+    transition: transform .2s;
+      
+}
+
+#products {
+    margin: 2% 4.93% 4% 4.93%;
+    padding: 1%;
+}
+
+.line {
+    border-bottom: 1px solid white;
+    width: 100%;
+      
+}
+
+/*makes the block hover and transition with an animation
+when it hovers the shadow becomes more blury*/
+.sectionContent:hover {
+    transform: scale(1.1);
+    box-shadow: black 0px 0px 30px;
+}
+
+/*styles the description on some blocks*/
+.sectionDescr {
+    font-family: 'Calibri', Times, serif;
+    font-size: large;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    overflow: auto;
+    color: white;
+    
+}
+
+/*it removes the style of a hyperlink to blend better with block
+,since the wholes block is a hyperlink*/
+.sectionLink{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*it changes the color on the submenu so it can be more visible (inteli7.html,
+products-pc-parts.html, products-phones.html)*/
+.history a {
+    color: rgb(255, 242, 67);
+}
+
+
+.history {
+    margin-top: 4%;
+    margin-left: 2%;
+    margin-bottom: -5%;
+}
+
+/*makes images have curves and adjusts the size of them*/
+.curvyImg {
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    border-radius: 80px;
+  }
+
+  .curvyImg2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    
+  }
+
+/*makes images not appear distorted and adjusts their position*/
+.fixImg {
+    margin: 5%;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+
+/*adjusts the size of the block and centers the txt
+in about-us.html*/
+.about-us-section {
+    width: 100%;
+}
+
+/*make the font white and adjusts the size and position of the blocks inside
+the block of about-us-section in about-us.html*/
+.sectionContentTwoEl {
+    font-size: 20px;
+    text-align: center;
+    width: 30%;
+    color: white;
+    margin: 1% 8% 1% 8%;
+      
+}
+
+/*it makes the font color of a paragraph in intel-i7.html black so it can
+be visible due to the background*/
+#txtBlack {
+    color: black;
+}
+
+/*it creates a shadow for the images on about-us*/
+#imgShad img{
+    box-shadow: black 0px 0px 40px;
+}
+
+/*Added Code */
+
+/*Creates a row-parent for elements inside it */
+.elementRow{
+     
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+
+    box-sizing: border-box;
+}
+
+
+/*Modifies the image on the Product Page( i7) */
+#productImage{
+     
+    width:25%;
+    box-sizing:border-box;
+    background-color: white;
+    box-shadow: black 0px 0px 10px;
+    border-radius: 80px;
+    text-align: center;
+    padding:15px;
+}
+
+
+
+#productDescription{
+    box-shadow: black 0px 0px 10px;
+    font-size: 24px;
+    width:50%;
+    height: 300px;
+    border-radius:100px 20px;
+    background-color: rgba(71, 176, 236, 0.432);
+    padding:0% 1% 0% 2%;
+}
+
+
+.itemSpecs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:100%;
+    margin-bottom:3%;
+}
+
+table {
+    padding: 1%;
+    margin-bottom: 1%;
+    background-color: rgba(71, 176, 236, 0.432);
+    box-shadow: black 0px 0px 10px;
+    border-radius:70px 20px;
+    width: 600px;
+    height: 400px;
+}
+
+td, thead{
+    font-size: 24px;
+    box-shadow: rgba(148, 189, 190, 0.068) 0px 0px 10px;
+    border-radius:10px 10px;
+}
+
+
+#categories {
+    font-size: 22px;
+    font-family: 'Calibri', Times, serif; 
+}
+
+#categories a{
+    color: inherit;
+}
+
+#pushDown {
+    margin-bottom: 5%;
+}
+
+
+.header2 {
+    font-size: 30px; 
+}
+
+
+#productDescription #code {
+    font-size: 16px;
+}
+
+
+.elementRow .sectionFourElements{
+    width:15%;
+    display:block;
+    margin:2%;
+     
+    box-sizing: border-box;
+    text-align:center;
+    height:30em;
+    padding:15px;
+    background-color: white;
+    box-shadow: black 0px 0px 10px;
+    border-radius: 80px;
+    transition: transform .2s;
+    font-family: 'Calibri', Times, serif;
+    font-size:large;
+    font-style: oblique;
+    text-align: center;
+    overflow: auto;
+    color: black;
+
+}
+
+
+.sectionFourElements:hover{
+    transform: scale(1.1);
+    box-shadow: black 0px 0px 30px;
+}
+
+/*adjusts the position of the form in tech.html*/
+form{
+    box-shadow: black 0px 0px 30px;
+    border-radius: 80px;
+    padding: 2%;
+    background-color: rgba(71, 176, 236, 0.432);
+}
+
+form input {
+    box-shadow: black 0px 0px 5px;
+    border-radius: 80px;
+    margin-left: 1%;
+    height: 22px;
+}
+
+form label {
+    font-size: 22px;
+}
+
+form legend {
+    margin-top: -10%;
+}
+
+form textarea {
+    box-shadow: black 0px 0px 5px;
+    border-radius: 10px;
+}
+
+/*it adjusts the size for the block that asks for a picture of the receipt,
+so that the asterisk(*) on ther right is on the right spot*/
+#txtReceipt {    
+    margin-right: -17%;
+    margin-left: 3%;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+#txtName2 {    
+    width: 18em;
+}
+
+#buttons {
+    font-size: 16px;
+}
+
+#buttons:hover {
+    transform: scale(1.02);
+    box-shadow: black 0px 0px 20px;
+}
+
+
+
